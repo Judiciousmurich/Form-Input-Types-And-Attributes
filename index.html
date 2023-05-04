@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forn Inputs, Attributes and their Examples</title>
+</head>
+<body>
+   <form>
+    <fieldset>
+        <legend>Your Details</legend>
+		<!-- Text Input -->
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name" pattern="[A-Za-z]+" minlength="3" maxlength="50" required><br><br>
+
+		<!-- Email Input -->
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+		<!-- Password Input -->
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" minlength="8" required><br><br>
+        </fieldset>
+        <br/>
+		
+    <fieldset>
+        <legend> Your Review</legend>
+        <p><label for="select a country">
+             countries:
+        </label></p>
+		<!-- Select Dropdown -->
+		<label for="country">Country:</label>
+		<select id="country" name="country" required>
+			<option value="">Select a country</option>
+			<option value="USA">USA</option>
+			<option value="Canada">Canada</option>
+			<option value="Mexico">Mexico</option>
+			<option value="Brazil">Brazil</option>
+			<option value="France">France</option>
+			<option value="Germany">Germany</option>
+			<option value="Japan">Japan</option>
+			<option value="China">China</option>
+		</select><br><br>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>checkbox and radio buttons</legend>
+        <br/>
+        <!-- Checkbox -->
+		<label for="agree">I agree to the terms and conditions:</label>
+		<input type="checkbox" id="agree" name="agree" required><br><br >
+    
+		<!-- Radio Buttons -->
+		<label for="gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="male" required>
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label><br><br>
+        </fieldset>
+    <br/>
+    <p>
+        <fieldset>
+        <legend>textarea</legend>
+        <label for="comments">
+            comments:
+        </label>
+        <textarea ncols="40" rows="4" id="comments">
+        </textarea>
+    </p>
+</fieldset>
+<br/>
+
+		<!-- File Input -->
+		<label for="file">Choose a file:</label>
+		<input type="file" id="file" name="file"><br><br>
+
+		<!-- Range Input -->
+		<label for="volume">Volume:</label>
+		<input type="range" id="volume" name="volume" min="0" max="100" value="50"><br><br>
+
+		<!-- Date Input -->
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date"><br><br>
+
+		<!-- Time Input -->
+		<label for="time">Time:</label>
+		<input type="time" id="time" name="time"><br><br>
+
+		<!-- Submit Button -->
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
